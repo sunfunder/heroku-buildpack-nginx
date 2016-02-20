@@ -119,6 +119,10 @@ else
   cp -R "$cache_dir/nginx" "$build_dir/vendor"
 fi
 
+# bust cache
+echo -n "-----> Busting asset cache by changing asset suffix in html/index.html to timestamp ... "
+sed -i -e 's!CACHEBUSTER!'$(date +%s)'!g' html/index.html
+
 # build a startup script
 echo -n "-----> Creating startup script... "
 mkdir "$build_dir/bin"

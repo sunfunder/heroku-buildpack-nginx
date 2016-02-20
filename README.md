@@ -1,3 +1,9 @@
+Sunfunder addition to this fork
+-------------------------------
+- add cache busting command to compile.sh
+
+[https://blog.heroku.com/archives/2012/11/13/hacking-buildpacks](https://blog.heroku.com/archives/2012/11/13/hacking-buildpacks)
+
 Heroku buildpack: nginx
 =======================
 
